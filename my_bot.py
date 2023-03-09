@@ -45,10 +45,11 @@ class Brain:
         #TODO: ANALYZE BULLSHIT
         pass
 
+    #------------------- PARTE QUE O RUI METEU ---------------------------#
     class Point:
-    def __init__(self,x: int, y: int):
-        self.x = x
-        self.y = y
+        def __init__(self,x: int, y: int):
+            self.x = x
+            self.y = y
  
     # A data structure for queue used in BFS
     class queueNode:
@@ -59,8 +60,7 @@ class Brain:
     # Check whether given cell(row,col)
     # is a valid cell or not
     def isValid(row: int, col: int):
-        return (row >= 0) and (row < 11) and
-                    (col >= 0) and (col < 11)
+        return (row >= 0) and (row < 11) and (col >= 0) and (col < 11)
     
     # These arrays are used to get row and column
     # numbers of 4 neighbours of a given cell
@@ -114,7 +114,9 @@ class Brain:
         
         # Return -1 if destination cannot be reached
         return -1
-
+    #-------------------FIM DA PARTE QUE O RUI METEU ---------------------#
+    
+    
     #Counterbalance between safety and points
     #Ou alphabeta etc...
     def min_max(self):
